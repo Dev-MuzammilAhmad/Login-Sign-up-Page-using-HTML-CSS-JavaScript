@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS files/styles.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="heading-container">
+        <h1>Welcome! </h1>
+        <h1 id="name-heading"> </h1>
+    </div>
+
+
+    <script>
+        let userName = document.getElementById("name-heading");
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        userName.innerText = currentUser.username;
+    </script>
+</body>
+
+</html>
