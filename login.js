@@ -15,7 +15,7 @@ loginForm.addEventListener("submit", function (event) {
 
     if (foundUser) {
         localStorage.setItem("currentUser", JSON.stringify(foundUser));
-        window.location.href = "../Pages/home.html";
+        window.location.href = "home.html";
     } else {
         alert("Invalid credentials");
     }
